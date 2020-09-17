@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_203634) do
   create_table "carts", force: :cascade do |t|
     t.integer "user_id"
     t.integer "product_id"
+    t.integer "quantity"
     t.boolean "sold", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

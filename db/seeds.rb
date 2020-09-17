@@ -1,16 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-User.delete_all
+# User.delete_all
 Product.delete_all
 Cart.delete_all
 
-travis = User.create(username: "travisprol0", bio: "this is my bio", avatar: "https://www.pinclipart.com/picdir/middle/220-2206914_clip-art-funny-avartars-funny-user-avatar-png.png")
-christiana = User.create(username: "christianamarie", bio: "this is her bio", avatar: "https://avatarfiles.alphacoders.com/547/54795.jpg")
+# travis = User.create(username: "travisprol0", bio: "this is my bio", avatar: "https://www.pinclipart.com/picdir/middle/220-2206914_clip-art-funny-avartars-funny-user-avatar-png.png")
+# christiana = User.create(username: "christianamarie", bio: "this is her bio", avatar: "https://avatarfiles.alphacoders.com/547/54795.jpg")
 
 Product.create(title: "ETC Source Four 10 Degree", brand: "ETC", model: "Source Four 10 Degree", sku: 456876, description: "The ETC Source Four (Source 4) 10 Degree features a standard Source Four ellipsoidal head and a 10 degree lens tube. Source Four's revolutionary technology gives you a clean white beam for unequaled imaging, crisp pattern projection, and a bright, even field.  These features combine to make the coolest beam available in an ellipsoidal- meaning gels, patterns, and shutters last longer and your performance space stays cooler.", price: 1200, quantity: 7, category: "lighting", image: "https://www.stagelightingstore.com/10278-large_default/etc-source-four-ellipsoidal-26-degree-black-7060a1008.jpg")
 Product.create(title: "light2", brand: "etc", model: "idk", sku: 456876, description: "this is the description", price: 1200, quantity: 7, category: "lighting", image: "https://www.stagelightingstore.com/10278-large_default/etc-source-four-ellipsoidal-26-degree-black-7060a1008.jpg")
