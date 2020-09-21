@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_203634) do
     t.integer "user_id"
     t.integer "product_id"
     t.integer "quantity"
+    t.integer "quantityAvailable"
     t.boolean "sold", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -34,6 +35,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_203634) do
     t.integer "quantity"
     t.string "category"
     t.string "image"
+    t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

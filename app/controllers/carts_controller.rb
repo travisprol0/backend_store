@@ -14,9 +14,16 @@ class CartsController < ApplicationController
     render json: cart
   end
 
+  def update
+    cart = Cart.find(params[:id])
+    cart.update!(cart_params)
+    render json: cart
+end
+
+
   private
 
   def cart_params
-    params.require(:cart).permit(:user_id, :product_id, :quantity, :sold)
+    params.require(:cart).permit(:user_id, :product_id, :quantity, :sold, :quantityAvailable)
   end
 end

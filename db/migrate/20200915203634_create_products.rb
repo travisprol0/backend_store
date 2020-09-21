@@ -10,6 +10,7 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.integer :quantity
       t.string :category
       t.string :image
+      t.integer :user_id
       t.timestamps
     end
   end
