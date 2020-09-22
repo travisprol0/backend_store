@@ -19,6 +19,12 @@ def update
   render json: product
 end
 
+def destroy
+  product = Product.find(params[:id])
+  product.destroy
+  render json: product
+end
+
   private
 
   def product_params
