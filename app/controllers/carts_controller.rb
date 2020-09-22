@@ -20,6 +20,12 @@ class CartsController < ApplicationController
     render json: cart
 end
 
+def destroy
+  cart = Cart.find(params[:id])
+  cart.destroy
+  render json: cart
+end
+
 
   private
 
