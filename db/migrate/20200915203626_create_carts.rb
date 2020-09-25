@@ -6,6 +6,7 @@ class CreateCarts < ActiveRecord::Migration[6.0]
       t.integer :quantity
       t.integer :quantityAvailable
       t.boolean :sold, :default => false
+      t.string :date
       t.timestamps
     end
   end

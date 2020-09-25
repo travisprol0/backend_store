@@ -30,6 +30,6 @@ end
   private
 
   def cart_params
-    params.require(:cart).permit(:user_id, :product_id, :quantity, :sold, :quantityAvailable)
+    params.require(:cart).permit(:user_id, :product_id, :quantity, :sold, :quantityAvailable, :date)
   end
 end
