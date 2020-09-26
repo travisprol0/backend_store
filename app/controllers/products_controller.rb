@@ -28,6 +28,6 @@ end
   private
 
   def product_params
-    params.require(:product).permit(:title, :brand, :model, :sku, :description, :price, :quantity, :category, :image, :user_id)
+    params.require(:product).permit(:title, :brand, :model, :description, :price, :quantity, :category, :image, :user_id)
   end
 end

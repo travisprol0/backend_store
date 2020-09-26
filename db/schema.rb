@@ -30,7 +30,6 @@ ActiveRecord::Schema.define(version: 2020_09_15_203634) do
     t.string "title"
     t.string "brand"
     t.string "model"
-    t.integer "sku"
     t.string "description"
     t.integer "price"
     t.integer "quantity"
